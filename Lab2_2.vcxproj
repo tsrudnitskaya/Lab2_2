@@ -90,6 +90,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -111,6 +113,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lab2_2.cpp" />
+    <ClCompile Include="lab_files\functions.cpp" />
+    <ClCompile Include="lab_files\lab2_2_func.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lab2_2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="lab_files\functions.h" />
+    <ClInclude Include="lab_files\lab2_2_data.h" />
+    <ClInclude Include="lab_files\lab2_2_func.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Lab2_2.resx">
+      <DependentUpon>Lab2_2.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
