@@ -8,7 +8,7 @@ int* dynamicArray;
 int N = 0;
 const int min = 0;
 const int max = 99;
-std::string filename = "E:\\!Univer\\Proga labs\\Lab2_2\\x64\\Debug\\numbers.txt";
+std::string filename = "";
 
 struct listItem
 {
